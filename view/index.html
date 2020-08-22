@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>そのうちみたいアニメリスト</title>
+</head>
+<body>
+<h>そのうち見たいと思っているアニメを列挙するだけ。</h>
+<p>Go言語の練習として制作</p>
+<form action="/" method="post">
+    タイトル:<input type="text" name="title">
+    説明:<input type="text" name="description">
+    <input type="submit" value="登録">
+</form>
+<ul>
+    {{range .}}
+        <li>{{.Title}} {{.Description}}</li>
+        <a href="/{{.ID}}">編集</a>
+    {{end}}
+</ul>
+</body>
+</html>
