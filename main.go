@@ -2,10 +2,10 @@ package main
 
 import (
 	"./controller"
+	"./database"
 	"github.com/julienschmidt/httprouter"
 	"log"
 	"net/http"
-	"./database"
 )
 
 func main() {
